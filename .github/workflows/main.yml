@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
+      - run: ls -l /usr/bin/g++*
       - run: g++ -v
       - run: |
           update-alternatives --all --skip-auto
